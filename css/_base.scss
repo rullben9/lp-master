@@ -1,0 +1,64 @@
+
+body {
+    background-image: linear-gradient(to right, #8F1F8F , #2549BE);
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+.title {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2.2em;
+}
+
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+}
+
+.inner-container {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 2em; 
+    padding-right: 2em;                                                                 
+}                                                                                     
+@include breakpoint(tablet) {
+    .inner-container {
+        max-width: 76.8em;
+    }
+}
+@include breakpoint(laptop) {
+    .inner-container {
+        max-width: 96em;
+    }
+}
+
+@include breakpoint(desktop) {
+    .inner-container {
+        max-width: 120em;
+    }
+}
+

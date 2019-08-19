@@ -1,0 +1,64 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fade-down .8s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+
+    .logo {
+        height: 5em;
+        width: 5em;
+        
+
+
+        svg {
+            height: 5em;
+            width: auto;
+        }
+    }
+
+    .navigation__info {
+        p {
+            font-size: 1em;
+            color: #ffffff;
+            font-weight: 700;
+            
+
+    
+            span {
+                color: #E88A48;
+            }
+        }
+    }
+}
+
+@include breakpoint(phablet) {
+    .navigation {
+        margin-top: 3em;
+        .navigation__info {
+            p {
+                float: left;
+                margin: 0 1em;
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+@keyframes fade-down {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
