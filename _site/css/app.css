@@ -551,7 +551,7 @@ html {
 }
 
 .navigation .navigation__info p {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #ffffff;
   font-weight: 700;
 }
@@ -612,6 +612,7 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
+  font-size: 1.6em;
 }
 
 .showcase h1 {
@@ -630,12 +631,13 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-delay: .8s;
           animation-delay: .8s;
+  font-size: 2.4em;
 }
 
 .showcase h2 {
   color: #ffffff;
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.6em;
   max-width: 20em;
   margin-left: auto;
   margin-right: auto;
@@ -652,16 +654,47 @@ html {
           animation-delay: 1s;
 }
 
+.showcase form .fields {
+  margin-top: 3em;
+  -webkit-animation: fade-up 1s;
+          animation: fade-up 1s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.showcase form .fields input {
+  width: 50%;
+  padding: 1.5em;
+  border: 0;
+  margin-top: 1em;
+  max-width: 40em;
+  border-radius: 3px;
+}
+
+.showcase form .fields textarea {
+  width: 50%;
+  padding: 1.5em;
+  border: 0;
+  margin-top: 2em;
+  max-width: 40em;
+  border-radius: 3px;
+}
+
 .showcase button {
   width: 12em;
   height: 3em;
   border-radius: 2em;
   border: 0;
   background: #EB3C3C;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 400;
   color: #ffffff;
-  margin-top: 4.5em;
+  margin-top: 3em;
   -webkit-animation: fade-up 1s;
           animation: fade-up 1s;
   opacity: 0;
@@ -689,6 +722,7 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-delay: .6s;
           animation-delay: .6s;
+  z-index: -100;
 }
 
 .showcase svg #gy {
@@ -700,11 +734,11 @@ html {
   .showcase {
     text-align: left;
     position: relative;
-    padding-bottom: 10em;
+    padding-bottom: 6em;
   }
   .showcase h3 {
-    font-size: 1.2em;
-    margin: 10em 0 0 0;
+    font-size: 1.6em;
+    margin: 6em 0 1em 0;
   }
   .showcase h1 {
     margin: 0 0 0 0;
@@ -716,8 +750,15 @@ html {
     margin: 2em 0 0 0;
     line-height: 20px;
   }
+  .showcase form .fields input {
+    width: 40%;
+    display: block !important;
+  }
+  .showcase form .fields textarea {
+    width: 40%;
+  }
   .showcase button {
-    margin: 6em 0 0 0;
+    margin: 3em 0 0 0;
   }
   .showcase svg {
     height: 40em;
@@ -725,27 +766,47 @@ html {
     position: absolute;
     bottom: 5em;
     top: -25px;
-    right: 10px;
+    right: -30px;
   }
 }
 
 @media (min-width: 64em) {
   .showcase h3 {
-    font-size: 1.3em;
-    margin: 12em 0 0 0;
+    font-size: 2em;
+    margin: 6em 0 0 0;
   }
   .showcase h1 {
     margin: .5em 0 0 0;
-    max-width: 13em;
-    font-size: 3.5em;
+    max-width: 12em;
+    font-size: 4.2em;
+    line-height: 1em;
   }
   .showcase h2 {
     position: static;
     margin: 2em 0 0 0;
   }
+  .showcase form .fields {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .showcase form .fields input {
+    width: 40%;
+    border: 0;
+    margin-top: 0 !important;
+  }
+  .showcase form .fields textarea {
+    width: 40%;
+    border: 0;
+    margin-top: 0 !important;
+  }
   .showcase button {
     position: static;
-    margin: 8em 0 0 0;
+    margin: 3em 0 0 0;
   }
   .showcase svg {
     height: 50em;
@@ -841,23 +902,19 @@ html {
 }
 
 .examples .more-work {
-  display: block;
   clear: left;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  max-width: 30em;
-  margin-top: 5em;
   opacity: 0;
   -webkit-transform: translateY(25px);
           transform: translateY(25px);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-}
-
-.examples .more-work p {
-  margin: 0 auto;
-  display: block;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8em;
 }
 
 .examples .more-work .fade-in {
@@ -875,10 +932,7 @@ html {
   font-size: 1.3em;
   font-weight: 400;
   color: #ffffff;
-  max-width: 300px;
   bottom: 0;
-  margin: 1em auto;
-  display: block;
   font-style: italic;
 }
 
@@ -896,7 +950,7 @@ html {
     display: none !important;
   }
   .examples__exercise-tablet {
-    margin: 15em auto 0 auto;
+    margin: 10em auto 0 auto;
     display: block !important;
     -webkit-transform: translateY(40px);
             transform: translateY(40px);
@@ -905,7 +959,7 @@ html {
     opacity: 0;
   }
   .examples__job-tablet {
-    margin: 15em auto 0 auto;
+    margin: 10em auto 0 auto;
     display: block !important;
     opacity: 0;
     -webkit-transform: translateY(40px);
@@ -919,12 +973,6 @@ html {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-  .more-work {
-    margin-left: auto;
-  }
-  .more-work p {
-    margin: 0 auto;
   }
 }
 
@@ -946,15 +994,10 @@ html {
     float: right;
   }
   .more-work {
-    margin-right: auto;
-    margin-left: 0;
     position: relative;
-    right: 20em;
     top: 8em;
-  }
-  .more-work p {
-    margin: 0 auto;
-    text-align: center;
+    margin-left: 20em !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -1049,7 +1092,7 @@ html {
   display: block;
   text-align: center;
   max-width: 300px;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .contact .contact__form {

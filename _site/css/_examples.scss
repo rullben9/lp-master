@@ -52,22 +52,17 @@
     }
 
     .more-work {
-    display: block;
-    clear: left;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    max-width: 30em;
-    margin-top: 5em;
-    opacity: 0;
-    transform: translateY(25px);
-    transition: all .5s ease-in-out;
+        clear: left;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(25px);
+        transition: all .5s ease-in-out;
+        max-width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8em;
 
-        p {
-            margin: 0 auto;
-            display: block;
-
-        }
+        
 
         .fade-in {
             opacity: 1;
@@ -83,10 +78,7 @@
             font-size: 1.3em;
             font-weight: 400;
             color: #ffffff;
-            max-width: 300px;
             bottom: 0;
-            margin: 1em auto;
-            display: block;
             font-style: italic;
         }
     }
@@ -111,7 +103,7 @@
     }
 
     .examples__exercise-tablet{
-        margin: 15em auto 0 auto;
+        margin: 10em auto 0 auto;
         display: block !important;
         transform: translateY(40px);
         transition: all .5s ease-out;
@@ -119,7 +111,7 @@
     }
 
     .examples__job-tablet {
-        margin: 15em auto 0 auto;
+        margin: 10em auto 0 auto;
         display: block !important;
         opacity: 0;
         transform: translateY(40px);
@@ -133,13 +125,7 @@
         transform: translateY(0);
     }
 
-    .more-work {
-        margin-left: auto;
 
-        p {
-            margin: 0 auto;
-        }
-    }
 }
 
 @include breakpoint(laptop) {
@@ -168,16 +154,11 @@
     }
 
     .more-work {
-        margin-right: auto;
-        margin-left: 0;
         position: relative;
-        right: 20em;
         top: 8em;
+        margin-left: 20em!important ;
+        margin-right: 0!important;
 
-        p {
-            margin: 0 auto;
-            text-align: center;
-        }
     }
 
     

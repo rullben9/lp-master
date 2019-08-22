@@ -10,6 +10,7 @@
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
         animation-delay: .6s;
+        font-size: 1.6em;
     }
 
     h1 {
@@ -23,12 +24,13 @@
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
         animation-delay: .8s;
+        font-size: 2.4em;
     }
 
     h2 {
         color: #ffffff;
         font-weight: 400;
-        font-size: 1.4em;
+        font-size: 1.6em;
         max-width: 20em;
         margin-left: auto;
         margin-right: auto;
@@ -41,16 +43,44 @@
         animation-delay: 1s;
     }
 
+    form {
+        .fields {
+            margin-top: 3em;
+            animation: fade-up 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            input {
+                width: 50%;
+                padding: 1.5em;
+                border: 0;
+                margin-top: 1em;
+                max-width: 40em;
+                border-radius: 3px;
+            }
+
+            textarea {
+                width: 50%;
+                padding: 1.5em;
+                border: 0;
+                margin-top: 2em;
+                max-width: 40em;
+                border-radius: 3px;
+            }
+        }
+    }
+
     button {
         width: 12em;
         height: 3em;
         border-radius: 2em;
         border: 0;
         background: #EB3C3C;
-        font-size: 1.3em;
+        font-size: 1.4em;
         font-weight: 400;
         color: #ffffff;
-        margin-top: 4.5em;
+        margin-top: 3em;
         animation: fade-up 1s;
         opacity: 0;
         animation-fill-mode: forwards;
@@ -71,7 +101,7 @@
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
         animation-delay: .6s;
-
+        z-index: -100;
         #gy {
             animation: fade-up 1s infinite;
         }
@@ -84,11 +114,11 @@
     .showcase {
         text-align: left;
         position: relative;
-        padding-bottom: 10em;
+        padding-bottom: 6em;
 
         h3 {
-            font-size: 1.2em;
-            margin: 10em 0 0 0;
+            font-size: 1.6em;
+            margin: 6em 0 1em 0;
         }
 
         h1 {
@@ -104,9 +134,22 @@
             line-height: 20px;
 
         }
+        form {
+            .fields {
+                
+                input {
+                    width: 40%;
+                    display: block !important;                    
+                }
+    
+                textarea {
+                    width: 40%;                    
+                }
+            }
+        }
 
         button {
-            margin:6em 0 0 0;
+            margin:3em 0 0 0;
         }
 
 
@@ -116,7 +159,7 @@
             position: absolute;
             bottom: 5em;
             top: -25px;
-            right: 10px;
+            right: -30px;
 
         }
     }
@@ -127,14 +170,15 @@
         
 
         h3 {
-            font-size: 1.3em;
-            margin: 12em 0 0 0;
+            font-size: 2em;
+            margin: 6em 0 0 0;
         }
 
         h1 {
             margin:.5em 0 0 0;
-            max-width: 13em;
-            font-size: 3.5em;
+            max-width: 12em;
+            font-size: 4.2em;
+            line-height: 1em;
         }
 
         h2 {
@@ -142,10 +186,36 @@
             margin: 2em 0 0 0 ;
         }
 
+        form {
+            .fields {
+                
+                width:45%;
+                display: flex;
+                justify-content: space-between;
+
+                
+                input {
+                    width: 40%;
+                    border: 0;
+                    margin-top: 0!important;
+
+                }
+    
+                textarea {
+                    width: 40%;
+                    border: 0;
+                    margin-top: 0!important;
+
+                }
+                    
+                
+            }
+        }
+
 
         button {
             position: static;
-            margin: 8em 0 0 0 ;
+            margin: 3em 0 0 0 ;
 
         }
 
