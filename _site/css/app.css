@@ -773,7 +773,7 @@ html {
 @media (min-width: 64em) {
   .showcase h3 {
     font-size: 1.4em;
-    margin: 2.5em 0 0 0;
+    margin: 4em 0 0 0;
   }
   .showcase h1 {
     margin: .5em 0 0 0;
@@ -810,7 +810,7 @@ html {
   }
   .showcase svg {
     height: 50em;
-    margin-top: 5em;
+    margin-top: 9em;
     right: -50px;
     top: -100px;
   }
